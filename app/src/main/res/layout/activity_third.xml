@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEF7F8"
+    android:orientation="vertical"
+    tools:context=".activity.ThirdActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_gender"
+            android:layout_alignParentRight="true"
+            android:textSize="25sp"/>
+        <TextView
+            android:id="@+id/Grade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="90sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/Grade"
+            android:layout_toRightOf="@+id/Grade"
+            android:text="分"
+            android:textSize="40sp" />
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="130dp"
+            android:id="@+id/Image"
+            android:layout_alignBottom="@+id/Grade"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/tree" />
+
+        <TextView
+            android:id="@+id/rank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Grade"
+            android:layout_centerHorizontal="true"
+            android:textSize="23sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/T1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="身高"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_height_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/T1"
+                android:maxLength="7"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_height_grade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_height_show"
+                android:layout_marginLeft="10dp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/T3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="体重"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_weight_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/T3"
+                android:layout_centerHorizontal="true"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_weight_grade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_weight_show"
+                android:layout_centerHorizontal="true"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/T5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:text="BMI"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_BMI_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/T5"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:maxLength="4"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_BMI_grade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_BMI_show"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#DEF1F1"
+        android:padding="5dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/fat_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="45dp"
+                android:padding="10dp"
+                android:text="体脂率"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignBottom="@+id/fat_rate"
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="10dp"
+                android:src="@mipmap/fat" />
+
+            <TextView
+                android:id="@+id/tv_fat_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/fat_rate"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:maxLength="6"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_fat_grade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/fat_rate"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="10dp"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EDF8F8"
+        android:padding="5dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/water_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="45dp"
+                android:padding="10dp"
+                android:text="水分率"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignBottom="@+id/water_rate"
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="10dp"
+                android:src="@mipmap/water" />
+
+            <TextView
+                android:id="@+id/tv_water_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/water_rate"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:maxLength="5"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_water_grade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/water_rate"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="10dp"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#DFF1F1"
+        android:padding="5dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/muscle_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="45dp"
+                android:padding="10dp"
+                android:text="肌肉率"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignBottom="@+id/muscle_rate"
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="10dp"
+                android:src="@mipmap/muscle" />
+
+            <TextView
+                android:id="@+id/tv_muscle_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/muscle_rate"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:maxLength="5"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_muscle_grade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/muscle_rate"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="10dp"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EDF8F8"
+        android:padding="5dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_bone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="45dp"
+                android:padding="10dp"
+                android:text="骨质"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignBottom="@+id/tv_bone"
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="10dp"
+                android:src="@mipmap/bone" />
+
+            <TextView
+                android:id="@+id/tv_bone_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tv_bone"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:maxLength="4"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_bone_grade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tv_bone"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="10dp"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#DFF1F1"
+        android:padding="5dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_metabolism"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="45dp"
+                android:padding="10dp"
+                android:text="代谢"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignBottom="@+id/tv_metabolism"
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="10dp"
+                android:src="@mipmap/metabolism" />
+
+            <TextView
+                android:id="@+id/tv_metabolism_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tv_metabolism"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:maxLength="4"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_metabolism_grade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tv_metabolism"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="10dp"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_health_report"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="@drawable/button_circle_shape"
+        android:padding="10dp"
+        android:text="我的报告"
+        android:textColor="#E3EFFA"
+        android:textSize="30sp" />
+
+</LinearLayout>
